@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Id_Proof_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF( ISPICKVAL(Proof_id_type__c, &quot;Aadhar Number&quot;) &amp;&amp;  ISPICKVAL(Proof_id_type__c, &quot;License Number&quot;), LEN( Proof_id__c ) != 12 , LEN(Proof_id__c) != 10 )</errorConditionFormula>
+    <errorMessage>Enter a valid Proof id Number</errorMessage>
+</ValidationRule>
