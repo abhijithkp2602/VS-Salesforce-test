@@ -1,3 +1,3 @@
-<aura:application>
-    <c:SimpleAuraComponent/>
+<aura:application extends = "force:slds">
+    <c:SimpleAuraComponent person = "Abhi"/>
 </aura:application>	
